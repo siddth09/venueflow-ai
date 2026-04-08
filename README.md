@@ -859,13 +859,4 @@ This is a competition submission. For production deployment:
 
 ---
 
-## 📞 Contact
-
-For questions about this submission:
-- **Repository**: [GitHub Link]
-- **Documentation**: This README
-- **Demo Video**: [Link if available]
-
----
-
 **Built with ❤️ for better event experiences**
