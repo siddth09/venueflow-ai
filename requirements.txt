@@ -2,7 +2,7 @@
 # Python 3.8+
 
 # Core dependencies (for demo/testing)
-# No external packages required for core functionality
+Flask==3.0.3
 
 # For production deployment with Google services:
 # google-cloud-maps==2.7.0

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VenueFlow Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar / Venue Heatmap Context -->
+        <aside class="sidebar glass-panel">
+            <div class="sidebar-header">
+                <h2>VenueFlow</h2>
+                <p>Live Dashboard</p>
+            </div>
+            
+            <div class="user-context">
+                <div class="status-badge green">Location: Entrance Gate</div>
+                <div class="status-badge">Seat: Sec 105, Row 12</div>
+            </div>
+
+            <div class="recommendations-container" id="recs-container">
+                <h3>Smart Recommendations</h3>
+                <!-- Recommendations injected via JS -->
+            </div>
+
+            <div class="heatmap-container">
+                <h3>Venue Status</h3>
+                <div id="heatmap-list" class="heatmap-list">
+                    <!-- Heatmap areas injected via JS -->
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Chat Interface -->
+        <main class="chat-container glass-panel">
+            <header class="chat-header">
+                <div class="avatar">AI</div>
+                <div class="chat-title">
+                    <h2>Venue Assistant</h2>
+                    <span class="online-status">Online</span>
+                </div>
+            </header>
+            
+            <div class="chat-window" id="chat-window">
+                <div class="message received">
+                    <div class="message-content">
+                        <strong>VenueFlow AI:</strong><br>
+                        Welcome to the stadium! I'm your smart assistant. You can ask me things like:<br>
+                        <br>
+                        "Where is the nearest restroom?"<br>
+                        "How long is the wait at concessions?"<br>
+                        "Navigate to my seat."
+                    </div>
+                    <div class="message-timestamp">Just now</div>
+                </div>
+                <!-- Dynamic messages injected here -->
+            </div>
+
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Type your query here..." autocomplete="off" />
+                <button id="send-btn" class="glow-on-hover">Send</button>
+            </div>
+        </main>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

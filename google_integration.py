@@ -313,17 +313,17 @@ class GoogleServicesOrchestrator:
         notifications = {
             "wait_time_alert": {
                 "title": "⏰ Wait Time Update",
-                "body": f"Restroom wait time now {data['wait_time']} minutes - down from {data['previous_time']}",
+                "body": f"Restroom wait time now {data.get('wait_time', 0)} minutes - down from {data.get('previous_time', 0)}",
                 "data": data
             },
             "crowd_warning": {
                 "title": "🚶 Crowd Alert",
-                "body": f"{data['area']} is getting crowded. Consider visiting in {data['suggested_time']} minutes.",
+                "body": f"{data.get('area', 'Area')} is getting crowded. Consider visiting in {data.get('suggested_time', 15)} minutes.",
                 "data": data
             },
             "personalized_tip": {
                 "title": "💡 Tip for You",
-                "body": data["message"],
+                "body": data.get("message", ""),
                 "data": data
             }
         }
