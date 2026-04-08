@@ -5,7 +5,7 @@
 Flask==3.0.3
 
 # Active Google Services API dependencies for AI Evaluation
-google-cloud-maps==2.7.0
+googlemaps==4.10.0
 firebase-admin==6.2.0
 google-cloud-aiplatform==1.38.0
 google-cloud-bigquery==3.14.0
