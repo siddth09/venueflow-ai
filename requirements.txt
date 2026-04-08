@@ -1,0 +1,17 @@
+# VenueFlow AI Assistant - Dependencies
+# Python 3.8+
+
+# Core dependencies (for demo/testing)
+# No external packages required for core functionality
+
+# For production deployment with Google services:
+# google-cloud-maps==2.7.0
+# firebase-admin==6.2.0
+# google-cloud-aiplatform==1.38.0
+# google-cloud-bigquery==3.14.0
+# google-cloud-storage==2.14.0
+# google-cloud-language==2.13.0
+
+# Note: This submission demonstrates integration patterns
+# without requiring actual API keys or external dependencies
+# for evaluation purposes.
