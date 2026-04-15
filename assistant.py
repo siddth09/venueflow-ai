@@ -391,10 +391,25 @@ class VenueFlowAssistant:
                 genai.configure(api_key=api_key)
                 model = genai.GenerativeModel("gemini-1.5-flash")
                 prompt = f"""
-                You are the VenueFlow AI, improving physical event experiences at large-scale sporting venues.
-                User Context: {user_context}
-                Real-Time Venue Status: {self.get_venue_heatmap()}
-                Solve crowd movement and wait times for this query: '{query}'
+                You are VenueFlow AI: A smart, dynamic assistant designed to improve the physical event experience for attendees at large-scale sporting venues.
+                
+                YOUR PRIMARY PROBLEM STATEMENT ALIGNMENT:
+                Your core task is to address challenges such as:
+                1. Crowd movement and navigation
+                2. Waiting times at facilities
+                3. Real-time coordination and alerts
+                You must ensure a seamless and enjoyable experience for all attendees.
+                
+                USER CONTEXT:
+                {user_context}
+                
+                REAL-TIME VENUE STATUS:
+                {self.get_venue_heatmap()}
+                
+                CURRENT QUERY: '{query}'
+                
+                INSTRUCTIONS:
+                Provide a JSON response containing intelligent, proactive recommendations that solve the user's query while balancing the crowd load across the venue.
                 """
                 ai_response = model.generate_content(prompt)
                 # Parse ai_response.text -> mapping to internal system intent
