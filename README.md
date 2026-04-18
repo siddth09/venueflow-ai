@@ -8,6 +8,7 @@
 [![Google Cloud](https://img.shields.io/badge/Google_Cloud-Vertex_AI-orange.svg)](https://cloud.google.com)
 [![Firebase](https://img.shields.io/badge/Firebase-Realtime_DB-yellow.svg)](https://firebase.google.com)
 [![Gemini AI](https://img.shields.io/badge/Gemini-1.5_Flash-green.svg)](https://ai.google.dev)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Cloud_Run-4285F4?logo=googlecloud&logoColor=white)](https://venueflow-ai-dtqipqxwha-uc.a.run.app)
 [![License](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
 
 ---
