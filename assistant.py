@@ -413,8 +413,8 @@ class VenueFlowAssistant:
                 """
                 ai_response = model.generate_content(prompt)
                 # Parse ai_response.text -> mapping to internal system intent
-            except Exception:
-                pass # Fallback to heuristic parser if API key is invalid/rate-limited
+            except Exception as e:
+                print(f"Gemini API Error: {e}") # Fallback to heuristic parser
                 
         query_lower = query.lower()
         
