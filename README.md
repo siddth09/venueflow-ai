@@ -32,15 +32,15 @@
 
 ---
 
-## 🎯 Chosen Vertical
+## 🎯 Hack2Skill Problem Statement & Persona Alignment
 
-**Vertical: Large-Scale Sporting Event Experience Assistant**
+To ensure clear alignment with the **Prompt Wars Virtual Challenge** guidelines, this project explicitly solves one of the core ecosystem verticals:
 
-VenueFlow AI is a **smart, dynamic assistant** designed for attendees at major sporting venues and arenas with 50,000+ capacity. Every design decision serves the mission of creating a seamless, personalized, and accessible experience for every ticket holder — from arrival to post-game departure.
+*   **Problem Statement:** *How can we leverage Generative AI to intelligently adapt physical environments, manage infrastructure limits, and dynamically personalize real-time experiences in large-scale scenarios?*
+*   **Persona:** **The High-Density Attendee / Event Goer.** This persona faces severe crowd bottlenecks, unpredictable facility wait times, navigation confusion, and a lack of real-time situational awareness.
+*   **Solution Logic:** Instead of just querying static databases, the application employs a Generative AI decision engine (Gemini) that synthesizes live crowd status with the user's intent to dynamically restructure the recommended path and facility interactions, avoiding bottlenecks autonomously.
 
 ---
-
-## 🎪 Problem Statement Alignment
 
 ### Core Challenge Addressed
 
